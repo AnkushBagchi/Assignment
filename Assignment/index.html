@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="emojionearea.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="emojionearea.min.js"></script>
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">
+            <p>&#128406;Segment 1</p>
+        </a>
+        <a href="#">
+            <p> &#128020;Segment 2</p>
+        </a>
+        <a href="#">
+            <p> &#128144;Segment 3</p>
+        </a>
+        <a href="#">
+            <p> &#127827;Segment 4</p>
+        </a>
+        <a href="#">
+            <p> &#127827;Segment 5</p>
+        </a>
+        <a href="#" class="scrol">
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">+ Add a segment</button>
+        </a>
+    </div>
+
+    <!-- <h2>Animated Sidenav Example</h2>
+    <p>Click on the element below to open the side navigation menu.</p> -->
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <div class="seg">
+        <h2>&#128020;Segment 1</h2>
+        <div class="card">
+
+            <div class="card-body">
+                <span>+</span>
+            </div>
+        </div>
+    </div>
+    <div class="seg">
+        <h2>&#128020;Segment 2</h2>
+        <div class="doc">
+            <div class="card1">
+                </a>
+                <!-- <img src="&#65291;" class="card-img-top" alt="..."> -->
+                <div class="card-body2">
+                    <span>&#128020;</span>
+                </div>
+                <div class="writ">
+                    <p>Newyork-IT <br> eS-11-50</p>
+                </div>
+            </div>
+            <div class="card2">
+                </a>
+                <!-- <img src="&#65291;" class="card-img-top" alt="..."> -->
+                <div class="card-body2">
+                    <span>&#129305;</span>
+                </div>
+                <div class="writ">
+                    <p>Newyork-IT <br> eS-11-50</p>
+                </div>
+            </div>
+            <div class="card3">
+                </a>
+                <!-- <img src="&#65291;" class="card-img-top" alt="..."> -->
+                <div class="card-body2">
+                    <span>&#129305;</span>
+                </div>
+                <div class="writ">
+                    <p>Newyork-IT <br> eS-11-50</p>
+                </div>
+            </div>
+            <div class="card4">
+                </a>
+                <!-- <img src="&#65291;" class="card-img-top" alt="..."> -->
+                <div class="card-body2">
+                    <span>&#129305;</span>
+                </div>
+                <div class="writ">
+                    <p>Newyork-IT <br> eS-11-50</p>
+                </div>
+            </div>
+            <div class="card5">
+                </a>
+                <!-- <img src="&#65291;" class="card-img-top" alt="..."> -->
+                <div class="card-body2">
+                    <!-- <span>+</span> -->
+                    <button type="button" class="btn btn-info btn-lg vat" data-toggle="modal"
+                        data-target="#myModal">+</button>
+                        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add a table</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <label for="fname">Name</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Icon</label><br>
+                        <input list="browsers" name="browser">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                        <br>
+                        <label for="lname">Color</label><br>
+                        <input list="browsers" name="browser">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                        <br>
+                        <input type="submit" value="Add">
+                        <input type="submit" value="Cancel">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Add a segment</h4>
+            </div>
+            <div class="modal-body">
+              <!-- <p>This is a small modal.</p> -->
+              <form action="/action_page.php">
+                        <label for="fname">Name</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Icon</label><br>
+                        <input list="browsers" name="browser">
+                        <datalist id="browsers">
+                            <option value="Internet Explorer">
+                            <option value="Firefox">
+                            <option value="Chrome">
+                            <option value="Opera">
+                            <option value="Safari">
+                        </datalist>
+                        <br>
+                        <label for="Description">Description</label><br>
+                        <textarea id="w3review" name="w3review" rows="4" cols="35">
+                        Add a Description
+                            </textarea><br>
+                        <br>
+                        <input type="submit" value="Add">
+                        <input type="submit" value="Cancel">
+                    </form>
+            </div>
+            <div class="modal-footer">
+              <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+<script>
+    $(document).ready(function(){
+        $("#myTextarea").emojioneArea({
+            pickerposition:"button"
+        });
+    })
+</script>
+</body>
+
+</html>
